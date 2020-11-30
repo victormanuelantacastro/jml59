@@ -1,0 +1,8 @@
+Para realizar la restauración de dicho sitio en una nueva carpeta del hosting realizariamos los siguientes pasos:
+
+1-Conectamos mediante ssh por la ventana de comandos. Una vez dentro seleccionamos la carpeta del hosting en la que queramos restaurar dicho proyecto.
+2-Una vez dentro de la carpeta creada para dicho cometido, realizamos:
+   2.1git init
+   2.2git remote add conexion https://github.com/victormanuelantacastro/jml59 (creamos una conexion a nuestro repositorio)
+   2.3git config --global http.sslVerify false (CDMON nos dara error de licencias y para saltarnoslo usamos este comando)
+   2.4git push conexion master (nos traemos la carpeta desde GITHUB)
